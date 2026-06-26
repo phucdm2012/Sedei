@@ -55,7 +55,7 @@ class Logic:
 
         file_info = QFileInfo(path)
         name_item = QStandardItem(file_info.fileName())
-        name_item.setIcon(icon_provider)
+        name_item.setIcon(icon_provider.icon(file_info))
 
         path_item = QStandardItem(path)
         parent_item.appendRow([name_item, path_item])

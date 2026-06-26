@@ -2,7 +2,11 @@
     "tags" : {
         "red" : {
             "name": "red",
-            "path1" : null
+            "path1" : "/home/may-chu/Documents/Sedei/main.py",
+            "path2" : "/home/may-chu/Downloads/mysql5.0.82.exe",
+            "path3" : "/home/may-chu/Documents/Sedei",
+            "path4" : "/home/may-chu/Pictures/Screenshots/Screenshot From 2026-06-26 09-24-27.png",
+            "path5" : "/home/may-chu/Downloads/server/data1.cab"
         },
 
         "green" : {
