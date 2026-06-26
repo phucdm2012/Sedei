@@ -1,0 +1,48 @@
+{
+    "tags" : {
+        "red" : {
+            "name": "red",
+            "path1" : null
+        },
+
+        "green" : {
+            "name": "green",
+            "path1" : null
+        },
+
+        "blue" : {
+            "name": "blue",
+            "path1" : null
+        },
+
+        "yellow" : {
+            "name": "yellow",
+            "path1" : null
+        },
+
+        "pink" : {
+            "name": "pink",
+            "path1" : null
+        },
+
+        "purple" : {
+            "name": "purple",
+            "path1" : null
+        },
+
+        "orange" : {
+            "name": "orange",
+            "path1" : null
+        },
+
+        "tan" : {
+            "name": "tan",
+            "path1" : null
+        },
+
+        "#50d499" : {
+            "name": "stock",
+            "path1" : null
+        }
+    }
+}
