@@ -9,14 +9,14 @@ class TagDashBoard(QDialog):
         self.tag_names = self.logic.get_tag_names()
         self.tag_colors = self.logic.get_tag_colors()
 
-        self.tag_list_layout = QVBoxLayout()
-        self.setLayout(self.tag_list_layout)
+        self.tag_dashboard_layout = QHBoxLayout()
+        self.setLayout(self.tag_dashboard_layout)
 
         for tag_name, tag_color in zip(self.tag_names, self.tag_colors):
             self.create_tag_item(tag_name, tag_color)
 
     def create_tag_item(self, tag_name: str, tag_color: str):
-        self.tag_list_layout.addWidget(TagItem(tag_name, tag_color))
+        self.tag_dashboard_layout.addWidget(TagItem(tag_name, tag_color))
 
 
 class TagItem(QWidget):
@@ -29,7 +29,7 @@ class TagItem(QWidget):
 
         self.setGraphicsEffect(self.shadow)
 
-        self.tag_item_layout = QVBoxLayout()
+        self.tag_item_layout = QHBoxLayout()
         self.tag_item_name_label = QLabel(tag_name)
         self.tag_item_layout.addWidget(self.tag_item_name_label)
         self.setLayout(self.tag_item_layout)

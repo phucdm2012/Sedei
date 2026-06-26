@@ -43,8 +43,8 @@ class Logic:
         if tag_key is None:
             tag_key = next(iter(tags))
 
-        tag_data = tags[tag_key]
-        return [value for key, value in tag_data.items() if key.startswith('path') and value]
+        tag_content = dict(tags[tag_key])
+        return [value for key, value in tag_content.items() if str(key).startswith('path') and value]
 
     def get_first_tag(self) -> dict:
         return next(iter(self.get_tags().values()), {})

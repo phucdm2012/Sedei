@@ -3,7 +3,7 @@ from PySide6.QtGui import QStandardItemModel
 from .logic import Logic
 
 
-class TagPaneWidget(QWidget):
+class TagPanelWidget(QWidget):
     def __init__(self):
         super().__init__()
         self.tag_widget_main_layout = QHBoxLayout()
