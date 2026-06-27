@@ -13,3 +13,11 @@ class MainWindow(QWidget):
 
         self.app_main_layout.addLayout(self.app_ui_layout)
         self.setLayout(self.app_main_layout)
+
+        self.custom_mainwindow_view()
+
+    def custom_mainwindow_view(self):
+        self.app_main_layout.setContentsMargins(0, 0, 0, 0)
+        self.app_ui_layout.setContentsMargins(0, 0, 0, 0)
+
+        self.resize(1200, 800)

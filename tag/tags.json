@@ -2,11 +2,11 @@
     "tags" : {
         "red" : {
             "name": "red",
-            "path1" : "/home/may-chu/Documents/Sedei/main.py",
-            "path2" : "/home/may-chu/Downloads/mysql5.0.82.exe",
-            "path3" : "/home/may-chu/Documents/Sedei",
-            "path4" : "/home/may-chu/Pictures/Screenshots/Screenshot From 2026-06-26 09-24-27.png",
-            "path5" : "/home/may-chu/Downloads/server/data1.cab"
+            "path1" : "D:/phuc/bg/macos-tahoe-26-6016x6016-22673.jpg",
+            "path2" : "D:/phuc/bg/macos-tahoe-26-5k-6016x6016-22672.jpg",
+            "path3" : "D:/phuc/bg/MacBook-Neo-Blue.jpg",
+            "path4" : "D:/phuc/bg/MacBook-Neo-Pink.jpg",
+            "path5" : "D:/phuc/bg/MacBook-Neo-Purple.jpg"
         },
 
         "green" : {

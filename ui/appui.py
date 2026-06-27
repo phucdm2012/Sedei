@@ -14,3 +14,8 @@ class AppUI(QSplitter):
         self.addWidget(self.tag_panel_widget)
 
         self.setSizes([400, 800])
+
+        self.custom_app_ui()
+
+    def custom_app_ui(self):
+        self.setContentsMargins(0, 0, 0, 0)

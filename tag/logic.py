@@ -8,11 +8,12 @@ from PySide6.QtCore import *
 from PySide6.QtGui import *
 
 BASE_DIR = Path(__file__).resolve().parent
-PATH_TO_CURRENT_TAGS = BASE_DIR / 'current_tags.json'
+PATH_TO_TAGS = BASE_DIR / 'tags.json'
+PATH_TO_CURRENT_TAG = BASE_DIR / 'current_tag.txt'
 
 
 class Logic:
-    def __init__(self, data_path: Path = PATH_TO_CURRENT_TAGS):
+    def __init__(self, data_path: Path = PATH_TO_TAGS):
         self.path_to_current_tags = Path(data_path)
 
     def __load_tags(self) -> dict:
@@ -45,6 +46,16 @@ class Logic:
 
         tag_content = dict(tags[tag_key])
         return [value for key, value in tag_content.items() if str(key).startswith('path') and value]
+    
+    def get_current_tag_name(self) -> str:
+        current_tag = self.get_current_tag()
+
+        if not current_tag:
+            self.get_first_tag
+
+    def get_current_tag(self) -> str:
+        with open(PATH_TO_CURRENT_TAG, 'r+', encoding='utf-8') as file:
+            return file.read()
 
     def get_first_tag(self) -> dict:
         return next(iter(self.get_tags().values()), {})

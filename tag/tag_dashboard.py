@@ -15,8 +15,14 @@ class TagDashBoard(QDialog):
         for tag_name, tag_color in zip(self.tag_names, self.tag_colors):
             self.create_tag_item(tag_name, tag_color)
 
+        self.custom_tag_dashboard()
+
     def create_tag_item(self, tag_name: str, tag_color: str):
         self.tag_dashboard_layout.addWidget(TagItem(tag_name, tag_color))
+
+    def custom_tag_dashboard(self):
+        self.tag_dashboard_layout.setContentsMargins(0, 0, 0, 0)
+        self.setContentsMargins(0, 0, 0, 0)
 
 
 class TagItem(QWidget):
